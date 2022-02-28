@@ -1,0 +1,7 @@
+.navbar {
+  background-color: rgb(235, 206, 166) !important;
+  border-bottom: 2px solid;
+}
+.active {
+  color: red !important;
+}
