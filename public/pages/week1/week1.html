@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/pages/week1/week1.css"/>
-  <title>Week One</title>
-</head>
-<body>
-  <h1> Welcome to the week one</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages/week1/week1.css" />
+    <title>Week One</title>
+  </head>
+  <body>
+    <h1>Week one 1.02</h1>
+
+    <div class="container col-container">
+      <div class="row align-items-start">
+        <div class="col">
+          <h2>GETTING STARTED</h2>
+          <div class="col__content">
+            <p>
+              NodeJS is a run time environment that allows to run javascript
+              outside of the browser. It utilises V8 engine created by Google.
+              NodeJS allows for server-side scripting, which is running the
+              script before the website is send to the web browser.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <h2>HOW TO START</h2>
+          <div class="col__content">
+            <p>
+              To initialize NodeJS project we need to install NodeJS on our
+              computer, along with the NPM. NPM stands for Node Package Manager
+              and allows us to install and modify packages inside of our
+              project.
+              <br />
+              After installing both things, we can create a folder in which we
+              will place our project. Then we just need to type
+              <code>npm init</code> to initialize the project. Then we will be
+              asked to fill out the information about the package name, version,
+              description, entry point(which is our main java script file like
+              app.js), test, git repository, keywords, author and license we
+              want to utilise. Then we need to confirm the details we provided
+              and we are done with project initialization!
+              <br />
+              To work easily with the code, we can go to the terminal and move
+              to our project's directory. Then by typing code . we can open our
+              file in VS Code compilator (this feature needs to be installed
+              first in out vs code).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col">
+          <h2>GETTING STARTED WITH JAVASCRIPT</h2>
+          <div class="col__content">
+            <h5>FUNCTIONS</h5>
+            <p>
+              In Java Script we have two different types of fucntions: normal
+              function and arrow function.
+              <br />
+              Normal function is declared by the function keyword, follow by the
+              name parantheses and curly brackets
+              <br />
+              <code> function myFunction() { ... } </code>
+              <br />
+              Arrow function is a bit different. It is assigned to a variable.
+              <br />
+              <code> const myfunction = () => { .. } </code>
+            </p>
+            <h5>VARIABLES</h5>
+            <p>
+              In JavaScript objects look similar to json objects
+              <br />
+              <code> const meme = { points: 54234, }; </code>
+              <br>
+              We can access object's variable or add a new one by just refering
+              to the object's name, dot and variable name
+              <br />
+              <code> meme.points += 1; meme.age = 'old'; </code>
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <h2>REST API</h2>
+          <div class="col__content">
+            <p>
+              While creating APIs, which are protocols for building and integrating software, we can utilise the rules of REST. Request are managed through HTTP requests such as: 
+              <h5> POST </h5>
+              <p>To add a new item </p>
+              <h5> DELETE </h5>
+              <p>To delete an item </p>
+              <h5> GET </h5>
+              <p>To get an item/ a list of items </p>
+              <h5> PATCH </h5>
+              <p>Updating only some details about the item </p>
+              <h5> PUT </h5>
+              <p>Updating all the details about the item </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

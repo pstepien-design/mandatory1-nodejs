@@ -1,8 +1,21 @@
+.welcome__text {
+  margin-right: 525px;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
 body {
   background-color: antiquewhite;
   height: 100%;
 }
-h1{
+h1 {
   text-align: center;
-  margin-top: 20px
+  margin-top: 20px;
+}
+img {
+  position: absolute;
+  right: 20px;
+  height: 300px
 }
