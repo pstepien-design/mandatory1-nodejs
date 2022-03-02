@@ -1,8 +1,26 @@
 body {
   background-color: antiquewhite;
-  height: 100%;
+  min-height: 100vh;
 }
-h1{
+h1 {
   text-align: center;
-  margin-top: 20px
+  margin-top: 20px;
+}
+.col {
+  background-color: rgb(192, 168, 140);
+  margin: 30px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: table-cell;
+  height: 500px;
+}
+.col__content {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.col-container {
+  display: table;
+  width: 100%;
 }

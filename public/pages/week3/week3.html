@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/pages/week3/week3.css"/>
-  <title>Week Three</title>
-</head>
-<body>
-  <h1> Welcome to the week three</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages/week3/week3.css" />
+    <title>Week Three</title>
+  </head>
+  <body>
+    <h1>Week Three 15.02</h1>
+    <div class="container col-container">
+      <div class="row align-items-start">
+        <div class="col">
+          <h2>LOOPS</h2>
+          <div class="col__content">
+            <p>
+              We got used to working with loops, when we want to for example get
+              the value of every object in the array. However, the typical,
+              "old-school" loop takes lots of lines of code:
+              <br />
+              Let's say we have an array of numbers:
+              <br />
+              <code> const numbers = [1, 2, 3, 4]; </code>
+              <br />
+              If we want to increment each value of the array, the loop would
+              look like this.
+              <br />
+              <code> for(let number of numbers){ number += 1; } </code>
+
+              <br />
+              There is a faster solution. We can use forEach method.
+              <br />
+              <code> numbers.forEach(number => number++); </code>
+              <br />
+              However, forEach has one limitation - it does not return anything,
+              it can only iterate. If we want to return a value, the better
+              solution is to use .map function.
+              <br />
+              <code> numbers.map(number => { number++ return number; }); </code>
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <h2>EXPRESS -> BACKEND SERVER</h2>
+          <div class="col__content">
+            <p>
+              Node Package Manager - mostly known as NPM. It's purpose is to put
+              packages in the place, so node can find them and manages
+              dependencies. To install node modules we just need one command in
+              the terminal
+              <br />
+              <code> npm install </code>
+              <br />
+              This way we have installed node modules into our project. What we
+              can also do it install dependencies such as express, nodemon or
+              bootstrap. We just simply need to type:
+              <br />
+              <code> npm install express </code>
+              <br />
+              Another way to install dependencies is by specifying them in the
+              package.json file.
+              <br />
+              <code> "dependencies": { "express": "^4.17.3" } </code>
+              <br />
+              To implement imports such as express in our app.js file we have
+              two options:
+              <br />
+              1. The newer one is using import:
+              <br />
+              <code> import express from 'express'; </code>
+              <br />
+              2. The other one is using require:
+              <br />
+              <code> const express = require('express'); </code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
