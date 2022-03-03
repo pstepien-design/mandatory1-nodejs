@@ -45,34 +45,39 @@
           <h2>EXPRESS -> BACKEND SERVER</h2>
           <div class="col__content">
             <p>
-              Node Package Manager - mostly known as NPM. It's purpose is to put
-              packages in the place, so node can find them and manages
-              dependencies. To install node modules we just need one command in
-              the terminal
+              As it was mentioned before we can utilise express in node. Express
+              allows us to process different http requests on our server.
               <br />
-              <code> npm install </code>
+              First we need to import express, after that we need to specify our
+              application will use it. Then we just need to write app. followed
+              by the desired request.
               <br />
-              This way we have installed node modules into our project. What we
-              can also do it install dependencies such as express, nodemon or
-              bootstrap. We just simply need to type:
+              <code>
+                const express = require('express');
+                <br />
+                const app = express();
+                <br />
+                app.get('/', (req, res) => { res.send('getting') });
+                <br />
+                app.post('/', (req, res) => { res.send('posting') });
+              </code>
               <br />
-              <code> npm install express </code>
+              To be able to access the server we need to specify the port it
+              will work on. We utilise app.listen for this.
               <br />
-              Another way to install dependencies is by specifying them in the
-              package.json file.
-              <br />
-              <code> "dependencies": { "express": "^4.17.3" } </code>
-              <br />
-              To implement imports such as express in our app.js file we have
-              two options:
-              <br />
-              1. The newer one is using import:
-              <br />
-              <code> import express from 'express'; </code>
-              <br />
-              2. The other one is using require:
-              <br />
-              <code> const express = require('express'); </code>
+              <code>
+                app.listen(8080, () => { console.log('The server is running',
+                8080); });
+              </code>
+              <br>
+              If we want to work with different files in our project structure, we should utilise express.static
+              By doing this, we specify the directory of the files to serve.
+              <br>
+              <code>
+                app.use(express.static(__dirname + '/public'));
+              </code>
+              <br>
+              __dirname is a variable that is used to determine the absolute path of the file.
             </p>
           </div>
         </div>
