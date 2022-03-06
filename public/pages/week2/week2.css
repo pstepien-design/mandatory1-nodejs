@@ -19,8 +19,19 @@ h1 {
 .col__content {
   margin-top: 20px;
   font-size: 15px;
+  float: left;
 }
 .col-container {
   display: table;
   width: 100%;
+}
+img {
+  float: right;
+  display: inline;
+}
+.package__info {
+  margin-left: 20px;
+  float: left;
+  width: 40%;
+  display: inline;
 }
